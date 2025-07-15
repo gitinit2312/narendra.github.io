@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My-Portfolio</title>
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ee64698128.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+      <div class="container">
+            <nav>
+                <div class="logo-content">
+                    <div class="logo">ND</div>
+                     <div class="logotext">
+                        <h1>NARENDRA DOLAS</h1>
+                        <span>SOFTWARE ENGINEER</span>
+                     </div>
+                </div>
+                <ul id ="navi">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                   <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+    </div>
+
+       <div class="container">
+        <div class="header-content">
+            <h1>Hello I'm <span> Narendra </span> <br>Software Enginner</h1>
+            <p>Passionate about creating innovative solutions and transforming ideas into reality through code. With expertise in full-stack development and a focus on user experience.</p>
+                <a href="#" class="btn">View Portfolio</a>
+                <div class="social-icon">
+                    <a href="#"></a>
+                    <a href="#"></a>
+                </div>
+        </div>      
+</div>
+</div>
+<!-- About Section -->
+ <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.jpg" >
+            </div>
+            <div class="about-col-2">
+                <h1 class="title">About Me</h1>
+                <p>Computer Science graduate with hands-on experience in programming 
+                    languages such as C, C++, Java, and JavaScript. PG-DAC certified
+                     from CDAC Pune with expertise in backend development using Spring and Spring
+Boot frameworks.</p>
+                    <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('experience')">experience</p>
+                <p class="tab-links" onclick="opentab('Education')">Education</p>
+                </div>
+
+                <div class="tab-content active-tab" id="skills">
+                    <ul>
+                        <li><span>java Developer</span><br>Building webpages using Spring and Spirng Boot</li>
+                    </ul>
+                </div>
+                   <div class="tab-content" id="experience">
+                    <ul>
+                        <li><span>java Developer</span><br>Building webpages using Spring and Spirng Boot</li>
+                    </ul>
+                </div>
+                   <div class="tab-content" id="Education">
+                    <ul>
+                        <li><span>java Developer</span><br>Building webpages using Spring and Spirng Boot</li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Service Section -->
+     <div id="services">
+        <div class="container">
+            <div class="title">My Services</div>
+            <div class="service-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>web development</h2>
+                        <p>As a passionate fresher in web development, I offer modern and responsive web solutions with 
+                            a strong focus on backend development using the Spring Framework. I build scalable and secure 
+                            applications with features like user authentication, RESTful APIs, and database integration.
+                             My services include full-stack development using HTML, CSS, JavaScript (with frameworks like React or Angular),
+                              and Spring Boot for efficient server-side logic. I am committed to clean code, continuous learning, 
+                              and delivering user-friendly applications tailored to client needs. Ideal for
+                             startups or small businesses looking for cost-effective, high-quality web solutions.</p>
+                     </div>
+                                            
+            </div>
+        </div>
+     </div>
+ </div>
+
+<!-- portfolio -->
+ <div id="portfolio">
+    <div class="container">
+        <h1 class="title">My Work</h1>
+      
+        <div class="worklist">
+         <div class="work">
+            <img src="images/ChatGPT Image Jul 15, 2025, 10_59_08 PM.png" alt="">
+            <div class="layer">
+                <h3>Hostel Management System </h3>
+                <p>The Hostel Management System is a software application designed to streamline
+                     and automate the administration of hostel operations. It manages student registrations
+                     , room allotments, fee tracking, staff details, visitor logs, and daily attendance.
+                      The system provides a centralized dashboard for administrators to efficiently allocate rooms, 
+                      monitor occupancy,  and generate reports. Key features include secure login for users,
+                      real-time updates, complaint registration, and calendar-based scheduling.
+                       This system reduces manual work, increases transparency, and enhances overall
+                        hostel management efficiency.</p>
+                   
+             <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+        </div>
+        </div>
+
+    </div>
+    <a class="btn" href="#">See more</a>
+</div>
+ </div>
+
+<!-- Contanct -->
+ <div id="contacts">
+    <div class="container">
+       <div class="row">
+        <div class="contact-left">
+             <div class="title">Contact Me</div>
+             <p><i class="fa-solid fa-envelope"></i> dolasnarendra310@gmail.com</p>
+             <p> <i class="fa-solid fa-phone"></i> +91-XXXXXXX</p>
+             <div class="social-icons">
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+             </div>
+             <a class="btn btn2"  download href="images/user.jpg">Download CV</a>
+        </div>
+        
+        <div class="contact-right">
+            <form action="">
+                <p>Your Name</p><input type="text" name="Name" placeholder="Your Name" required>
+                <p>Email</p><input type="text" name="Email" placeholder="yourmail@gmail.com" required>
+                <textarea name="InText"placeholder="Enter The Text" rows="6"></textarea>
+                <button type="submit" class="btn btn2">submit</button>
+            </form>
+        </div>
+    </div>
+ </div>
+       
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-content");
+
+           function opentab(tabname){ 
+      for(let tablink of tablinks){
+    tablink.classList.remove("active-link");
+     }
+
+      for(let tabcontent of tabcontents){
+    tabcontent.classList.remove("active-tab");
+     }
+
+     event.currentTarget.classList.add("active-link");
+     document.getElementById(tabname).classList.add("active-tab");
+          }
+
+    </script>
+       
+    <script>
+      var menu= document.getElementById('navi');
+                   function openmenu(){
+                        menu.style.right="0";
+                   }
+
+                    function closemenu(){
+                        menu.style.right="-200px";
+                   }             
+    </script>
+
+    <script>
+
+    </script>
+</body>
+</html>
